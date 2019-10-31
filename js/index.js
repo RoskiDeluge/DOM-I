@@ -64,6 +64,8 @@ mainContent[1].textContent = siteContent["main-content"]["about-h4"];
 mainContent[2].textContent = siteContent["main-content"]["services-h4"];
 mainContent[3].textContent = siteContent["main-content"]["product-h4"];
 mainContent[4].textContent = siteContent["main-content"]["vision-h4"];
+mainContent[5].textContent = siteContent["contact"]["contact-h4"];
+
 
 let midImg = document.getElementById('middle-img');
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
@@ -74,3 +76,9 @@ mainText[1].textContent = siteContent["main-content"]["about-content"];
 mainText[2].textContent = siteContent["main-content"]["services-content"];
 mainText[3].textContent = siteContent["main-content"]["product-content"];
 mainText[4].textContent = siteContent["main-content"]["vision-content"];
+mainText[5].textContent = siteContent["contact"]["address"];
+mainText[6].textContent = siteContent["contact"]["phone"];
+mainText[7].textContent = siteContent["contact"]["email"];
+mainText[8].textContent = siteContent["footer"]["copyright"];
+
+
