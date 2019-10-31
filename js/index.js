@@ -49,10 +49,6 @@ links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
 
-links.forEach((link) => {
-  link.style.color = 'green';
-})
-
 let headline = document.querySelector('h1');
 headline.textContent = siteContent["cta"]["h1"];
 
@@ -85,4 +81,22 @@ mainText[6].textContent = siteContent["contact"]["phone"];
 mainText[7].textContent = siteContent["contact"]["email"];
 mainText[8].textContent = siteContent["footer"]["copyright"];
 
+
+links.forEach((link) => {
+  link.style.color = 'green';
+})
+
+
+let item1 = document.createElement('a');
+let item2 = document.createElement('a');
+item1.textContent = "FAQ";
+item1.style.color = 'green';
+item1.style.cursor = 'pointer';
+item2.textContent = "Our Team";
+item2.style.color = 'green';
+item2.style.cursor = 'pointer';
+
+let parentElement = document.querySelector('nav');
+parentElement.appendChild(item1);
+parentElement.prepend(item2);
 
