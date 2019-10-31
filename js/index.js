@@ -49,6 +49,10 @@ links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
 
+links.forEach((link) => {
+  link.style.color = 'green';
+})
+
 let headline = document.querySelector('h1');
 headline.textContent = siteContent["cta"]["h1"];
 
