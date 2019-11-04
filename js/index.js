@@ -40,3 +40,63 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let links = document.querySelectorAll('a');
+links[0].textContent = siteContent["nav"]["nav-item-1"];
+links[1].textContent = siteContent["nav"]["nav-item-2"];
+links[2].textContent = siteContent["nav"]["nav-item-3"];
+links[3].textContent = siteContent["nav"]["nav-item-4"];
+links[4].textContent = siteContent["nav"]["nav-item-5"];
+links[5].textContent = siteContent["nav"]["nav-item-6"];
+
+let headline = document.querySelector('h1');
+headline.textContent = siteContent["cta"]["h1"];
+
+let button = document.querySelector('button');
+button.textContent = siteContent["cta"]["button"];
+
+let mainImg = document.getElementById('cta-img');
+mainImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let mainContent = document.querySelectorAll('h4');
+mainContent[0].textContent = siteContent["main-content"]["features-h4"];
+mainContent[1].textContent = siteContent["main-content"]["about-h4"];
+mainContent[2].textContent = siteContent["main-content"]["services-h4"];
+mainContent[3].textContent = siteContent["main-content"]["product-h4"];
+mainContent[4].textContent = siteContent["main-content"]["vision-h4"];
+mainContent[5].textContent = siteContent["contact"]["contact-h4"];
+
+
+let midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let mainText = document.querySelectorAll('p');
+mainText[0].textContent = siteContent["main-content"]["features-content"];
+mainText[1].textContent = siteContent["main-content"]["about-content"];
+mainText[2].textContent = siteContent["main-content"]["services-content"];
+mainText[3].textContent = siteContent["main-content"]["product-content"];
+mainText[4].textContent = siteContent["main-content"]["vision-content"];
+mainText[5].textContent = siteContent["contact"]["address"];
+mainText[6].textContent = siteContent["contact"]["phone"];
+mainText[7].textContent = siteContent["contact"]["email"];
+mainText[8].textContent = siteContent["footer"]["copyright"];
+
+
+links.forEach((link) => {
+  link.style.color = 'green';
+})
+
+
+let item1 = document.createElement('a');
+let item2 = document.createElement('a');
+item1.textContent = "FAQ";
+item1.style.color = 'green';
+item1.style.cursor = 'pointer';
+item2.textContent = "Our Team";
+item2.style.color = 'green';
+item2.style.cursor = 'pointer';
+
+let parentElement = document.querySelector('nav');
+parentElement.appendChild(item1);
+parentElement.prepend(item2);
+
